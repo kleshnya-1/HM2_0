@@ -1,0 +1,14 @@
+
+F
+java:S1481")Remove this unused "list" local variable.(“®×8ıµÔœŠ/
+E
+java:S2129*"#Remove this "Character" constructor(¢øå®úÿÿÿÿ8¦éÁÅŠ/
+’
+java:S1319""pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Òš·ıÿÿÿÿ8·öÇÅŠ/
+S
+java:S1874*"1Remove this use of "Character"; it is deprecated.(¢øå®úÿÿÿÿ8¦éÁÅŠ/
+Q
+java:S3740""/Provide the parametrized type for this generic.(Òš·ıÿÿÿÿ8·öÇÅŠ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·ßğË
+U
+java:S1854"8Remove this useless assignment to local variable "list".(“®×8ıµÔœŠ/

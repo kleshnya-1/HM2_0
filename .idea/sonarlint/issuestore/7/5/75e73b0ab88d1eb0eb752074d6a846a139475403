@@ -1,0 +1,10 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ëã©Ó
+4
+java:S1700"Rename field "iterator"(¯¹˜Ş8øÃÅŠ/
+L
+java:S3740"/Provide the parametrized type for this generic.(¯¹˜Ş8øÃÅŠ/
+p
+java:S2272"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(«ŞÄ•ùÿÿÿÿ8øÃÅŠ/
+L
+java:S3740"/Provide the parametrized type for this generic.(¯¹˜Ş8øÃÅŠ/
