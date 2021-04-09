@@ -1,6 +1,6 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(½ûé¬ıÿÿÿÿ8•›ÆçŠ/
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÓÌƒıÿÿÿÿ8•›ÆçŠ/
+X	java:S125"<This block of commented-out lines of code should be removed.(üÈ£ˆ8£ÂÆçŠ/
+]	java:S125"<This block of commented-out lines of code should be removed.(½ûé¬ıÿÿÿÿ8•›ÆçŠ/
 L
 java:S1128	"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8•›ÆçŠ/
-X	java:S125"<This block of commented-out lines of code should be removed.(üÈ£ˆ8£ÂÆçŠ/

@@ -1,4 +1,11 @@
 
-Z	java:S1068"9Replace this use of System.out or System.err by a logger.(¨´ÌŽþÿÿÿÿ8êÙ¯îŠ/
-W	java:S125"<This block of commented-out lines of code should be removed.(š§Îc8‘íŠ/
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òšüÀ
+W	java:S125"<This block of commented-out lines of code should be removed.(š§Îc8èê¦›‹/
+]	java:S125*"<This block of commented-out lines of code should be removed.(¹‹®šûÿÿÿÿ8èê¦›‹/
+]	java:S125@"<This block of commented-out lines of code should be removed.(¿Œ”¦üÿÿÿÿ8èê¦›‹/
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òšüÀ8èê¦›‹/
+{
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(Ì‡¥¨ûÿÿÿÿ8èê¦›‹/
+v
+java:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä—Š™8èê¦›‹/
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(¨´ÌŽþÿÿÿÿ8èê¦›‹/

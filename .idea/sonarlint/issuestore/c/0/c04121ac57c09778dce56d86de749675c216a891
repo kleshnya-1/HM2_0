@@ -1,9 +1,9 @@
 
-Q
-java:S3740"/Provide the parametrized type for this generic.(ÿ›Éøÿÿÿÿ8ìì–èŠ/
-U	java:S106&"9Replace this use of System.out or System.err by a logger.(¦’ÕÒ8–ó×ìŠ/
-]	java:S125 "<This block of commented-out lines of code should be removed.(‚˜ªéúÿÿÿÿ8û½ÊîŠ/
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òšüÀ8«ÁĞğ‰/
-X	java:S125#"<This block of commented-out lines of code should be removed.(¡˜êµ8—¤¸îŠ/
-D
-java:S1481"'Remove this unused "ch" local variable.(ˆö¾Ô8û½ÊîŠ/
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8åûó˜‹/
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8åûó˜‹/
+]	java:S125"<This block of commented-out lines of code should be removed.(ÒÉ–Íüÿÿÿÿ8åûó˜‹/
+]	java:S125"<This block of commented-out lines of code should be removed.(àŠÆÓüÿÿÿÿ8åûó˜‹/
+W	java:S125 "<This block of commented-out lines of code should be removed.(àá®8åûó˜‹/

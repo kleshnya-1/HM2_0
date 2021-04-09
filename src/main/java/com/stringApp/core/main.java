@@ -9,7 +9,7 @@ public class main {
 
 Composite text = new Composite();
 
-
+/*
 OneElement a = new OneElement('h');
 OneElement a2 = new OneElement('H');
 OneElement a3 = new OneElement('h');
@@ -19,28 +19,52 @@ OneElement a3 = new OneElement('h');
 text.add(a);
 text.add(a2);
 
+*/
 
-text.showIt();
+//text.showIt();
+
+OneElement oneElement = new OneElement('k');
+
+oneElement.showIt();
 
 
+Composite_filler_withBuffers g = new Composite_filler_withBuffers("first seckond third. again this");
 
-gggg g = new gggg("ggg ff ttt. gg fffd");
-
-
+g.splitCharactersArrayList2("first seckong three. how");
 g.makeIt();
-//g.tell();
+g.tell();
 
-        text = g.getComp();
-
-        text.add(a2);
+      text = g.getComp1();
 
 
 
+        //text.add(a2);
 
 
-text.showIt();
 
-text.showItLikeItMustBe();
+
+        OneElement g66 = new OneElement('g');
+        OneElement g3 = new OneElement('g');
+        OneElement g5 = new OneElement('g');
+
+
+        Composite word1 = new Composite();
+        Composite sent1 = new Composite();
+        Composite paragraph = new Composite();
+
+
+        word1.add(g66);
+        word1.add(g3);
+
+        paragraph.add(sent1);
+        //sent1.add();
+
+
+
+
+/*text.showIt();
+
+text.showItLikeItMustBe();*/
 
 
 //String ssstr = "ggfdd ff ttt ";

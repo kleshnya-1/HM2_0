@@ -7,35 +7,32 @@ import java.util.List;
 public class OneElement implements ElementMine {
 
 
-   List <Character> c = new ArrayList<>();
+   char c;
 
     public OneElement(char c) {
+
+        this.c=(c);
+    }
+
+
+
+
+   /* public void set(char c) {
         this.c.clear();
-        this.c.add(c);
-    }
-
-    public OneElement(List a) {
-        this.c = a;
-    }
-
-
-
-    public void set(char c) {
-        this.c.clear();
-        this.c.add(c) ;
-    }
+        this.c.add(new OneElement(c)) ;
+    }*/
 
     @Override
     public void showIt() {
 
-        for (Character ch : c){
-            //System.out.println(ch);
+        //for (OneElement ch : c){
+            //System.out.print(ch);
         }
 
-        //System.out.print(c.);
+      /*  //System.out.print(c.);
     }
-    public void showItLikeItMustBe() {
-        System.out.print(c.toArray());
+   // public void showItLikeItMustBe() {
+       // System.out.print(c.toArray());
     }
 
 
@@ -47,5 +44,5 @@ public class OneElement implements ElementMine {
         }
         else throw new UnsupportedOperationException("nono");
 
-    }
+    }*/
 }
