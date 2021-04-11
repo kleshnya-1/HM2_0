@@ -24,7 +24,7 @@ public class main {
         textServise.getStringForSplitting(example);
         textServise.splitText();
 
-        NP_L3_text text = new NP_L3_text(textServise.getText());
+        L3_text text = new L3_text(textServise.getText());
 
 
         text.print();

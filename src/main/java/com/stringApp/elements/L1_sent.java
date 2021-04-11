@@ -2,16 +2,16 @@ package com.stringApp.elements;
 
 import java.util.List;
 
-public class NP_l1_sent implements OneItem {
+public class L1_sent implements OneItem {
 
-    List<NP_L0_word> sent;
+    List<L0_word> sent;
 
-    public NP_l1_sent(List<NP_L0_word> sent) {
+    public L1_sent(List<L0_word> sent) {
         this.sent = sent;
     }
 
 
-    public List getSent() {
+    public List<L0_word> getSent() {
         return sent;
     }
 
@@ -22,7 +22,7 @@ public class NP_l1_sent implements OneItem {
 
     public void print(){
 int count =0;
-        for (NP_L0_word l0:sent){
+        for (L0_word l0:sent){
             count++;
             if (sent.size()!=count){
                 l0.print();

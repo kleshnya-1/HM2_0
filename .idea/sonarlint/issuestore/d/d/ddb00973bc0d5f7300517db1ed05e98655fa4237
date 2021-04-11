@@ -1,32 +1,13 @@
 
-i
-java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘8í´óğ‰/
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÓÌƒıÿÿÿÿ8í´óğ‰/
-W	java:S125)"<This block of commented-out lines of code should be removed.(Ü¡!8¼ß’—‹/
-X	java:S125A"<This block of commented-out lines of code should be removed.(íÑ¯¯8°Ï˜‹/
-U
-java:S1854
-"8Remove this useless assignment to local variable "text".(Ëãá8ñ™¦½‹/
-]	java:S125T"<This block of commented-out lines of code should be removed.(Áß¹şÿÿÿÿ8ø¿çŠ/
-X	java:S125a"<This block of commented-out lines of code should be removed.(î¹Ê8ø¿çŠ/
-Y	java:S125Í"<This block of commented-out lines of code should be removed.(Ò”Ø‰8ø¿çŠ/
-X	java:S125ß"<This block of commented-out lines of code should be removed.(ŠöÕ8ø¿çŠ/
-Y	java:S125¹"<This block of commented-out lines of code should be removed.(ñ–ˆÖ8ø¿çŠ/
-]	java:S125"<This block of commented-out lines of code should be removed.(ôû¶¦úÿÿÿÿ8ˆùó–‹/
-D
-java:S14810"'Remove this unused "g5" local variable.(ìÉ¹ı8Ì‘™‹/
-^	java:S125ï"<This block of commented-out lines of code should be removed.(åŞ•Šşÿÿÿÿ8ø¿çŠ/
-F
-java:S1481
-")Remove this unused "text" local variable.(Ëãá8ñ™¦½‹/
-]	java:S125F"<This block of commented-out lines of code should be removed.(ØÏ®•øÿÿÿÿ8†ÍĞíŠ/
-]	java:S125"<This block of commented-out lines of code should be removed.(²¾ÓÛøÿÿÿÿ8ñ™¦½‹/
-]	java:S125<"<This block of commented-out lines of code should be removed.(ñÆ›Îüÿÿÿÿ8Áº§›‹/
-^	java:S125"<This block of commented-out lines of code should be removed.(¹”¸ıÿÿÿÿ8ø¿çŠ/
-^	java:S125Ø"<This block of commented-out lines of code should be removed.(ëâÊúÿÿÿÿ8ø¿çŠ/
-S
-java:S18540"6Remove this useless assignment to local variable "g5".(ìÉ¹ı8âõ™‹/
-X	java:S125\"<This block of commented-out lines of code should be removed.(ô¬íÉ8ø¿çŠ/
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡8ÒÜóÛ‹/
 Z
-java:S1854%"8Remove this useless assignment to local variable "text".(Ğ½üåúÿÿÿÿ8ñ™¦½‹/
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡8í´óğ‰/
+java:S1854
+"=Remove this useless assignment to local variable "character".(¯¢„¦8õÀöÛ‹/
+i
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘8ÒÜóÛ‹/
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(†ÆêŒüÿÿÿÿ8ÒÜóÛ‹/
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÓÌƒıÿÿÿÿ8ÒÜóÛ‹/
+K
+java:S1481
+".Remove this unused "character" local variable.(¯¢„¦8õÀöÛ‹/
+]	java:S125"<This block of commented-out lines of code should be removed.(Úåíÿÿÿÿÿ8Áÿü…Œ/

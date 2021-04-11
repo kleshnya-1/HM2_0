@@ -1,7 +1,7 @@
 
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ôÛõéŠ/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(–í˜úÿÿÿÿ8—³ôéŠ/
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¬õéŠ/
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òšüÀ8—³ôéŠ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òšüÀ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(–í˜úÿÿÿÿ

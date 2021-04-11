@@ -1,4 +1,4 @@
 
-d
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ä¡Ã¨ýÿÿÿÿ8¥„Ð›Š/
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ëã©Ó
+]
+java:S2094"BRemove this empty class, write its code or make it an "interface".(ä¡Ã¨ýÿÿÿÿ

@@ -9,5 +9,8 @@
         <module name="HM2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="HM2" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

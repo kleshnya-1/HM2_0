@@ -2,15 +2,15 @@ package com.stringApp.elements;
 
 import java.util.List;
 
-public class NP_l2_paragraph implements OneItem {
+public class L2_paragraph implements OneItem {
 
 
-    List<NP_l1_sent> paragraph;
+    List<L1_sent> paragraph;
 
-    public NP_l2_paragraph(List paragraph) {
+    public L2_paragraph(List paragraph) {
         this.paragraph = paragraph;
     }
-    public NP_l2_paragraph() {
+    public L2_paragraph() {
 
     }
 
@@ -20,14 +20,14 @@ public class NP_l2_paragraph implements OneItem {
     }
 
     public void print (){
-        for (NP_l1_sent l1: paragraph){
+        for (L1_sent l1: paragraph){
             l1.print();
         }
     }
 
 
 
-    public List getParagraph() {
+    public List<L1_sent> getParagraph() {
         return paragraph;
     }
 

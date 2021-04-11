@@ -1,7 +1,0 @@
-
-_
-java:S1128"=Remove this unused import 'javax.lang.model.element.Element'.(¦¶΅›όÿÿÿÿ8¦σμρ‰/
-‰
-java:S1319"lThe type of the "a" object should be an interface such as "List" rather than the implementation "ArrayList".(β‡ΧΖ8Η/
-i	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ω…Ϊυ8»Μπ‰/
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ςόΐ8»Μπ‰/

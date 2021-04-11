@@ -1,26 +1,21 @@
 package com.stringApp.elements;
 
-import com.stringApp.elements.NP_L0_word;
-import com.stringApp.elements.NP_L3_text;
-import com.stringApp.elements.NP_l1_sent;
-import com.stringApp.elements.NP_l2_paragraph;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class TextServise_CREATOR implements OneItem {
 
-    private NP_L3_text bigText = new NP_L3_text();
-    private List<NP_l2_paragraph> paragraphs = new ArrayList<>();
-    private List<NP_l1_sent> sents = new ArrayList<>();
-    private List<NP_L0_word> words = new ArrayList<>();
+    private L3_text bigText = new L3_text();
+    private List<L2_paragraph> paragraphs = new ArrayList<>();
+    private List<L1_sent> sents = new ArrayList<>();
+    private List<L0_word> words = new ArrayList<>();
 
 
-    private List<NP_l2_paragraph> Buffer_paragraphs = new ArrayList<>();
-    private List<NP_l1_sent> Buffer_sents = new ArrayList<>();
-    private List<NP_L0_word> Buffer_words = new ArrayList<>();
-    private List<NP_L0_word> Buffer_words2 = new ArrayList<>();
+    private List<L2_paragraph> Buffer_paragraphs = new ArrayList<>();
+    private List<L1_sent> Buffer_sents = new ArrayList<>();
+    private List<L0_word> Buffer_words = new ArrayList<>();
+    private List<L0_word> Buffer_words2 = new ArrayList<>();
 
 
     private String originalText = " ";
@@ -49,22 +44,22 @@ public class TextServise_CREATOR implements OneItem {
 
 
             if (word.endsWith(",")) {
-                Buffer_words.add(new NP_L0_word(word.substring(0, word.length() - 1)));
+                Buffer_words.add(new L0_word(word.substring(0, word.length() - 1)));
                 counter++;
                 Buffer_words2 = new ArrayList<>
                         (Buffer_words.subList(Buffer_words.size() - counter, Buffer_words.size()));
 
 
             } else if (word.endsWith(".")) {
-                Buffer_words.add(new NP_L0_word(word.substring(0, word.length() - 1)));
+                Buffer_words.add(new L0_word(word.substring(0, word.length() - 1)));
                 counter++;
                 Buffer_words2 = new ArrayList<>
                         (Buffer_words.subList(Buffer_words.size() - counter, Buffer_words.size()));
-                Buffer_sents.add(new NP_l1_sent(Buffer_words2));
+                Buffer_sents.add(new L1_sent(Buffer_words2));
                 counter = 0;
 
             } else {
-                Buffer_words.add(new NP_L0_word(word.substring(0, word.length())));
+                Buffer_words.add(new L0_word(word.substring(0, word.length())));
                 counter++;
                 Buffer_words2 = new ArrayList<>
                         (Buffer_words.subList(Buffer_words.size() - counter, Buffer_words.size()));
@@ -73,7 +68,7 @@ public class TextServise_CREATOR implements OneItem {
 
 
         }
-        Buffer_paragraphs.add(new NP_l2_paragraph(Buffer_sents));
+        Buffer_paragraphs.add(new L2_paragraph(Buffer_sents));
         bigText.setText(Buffer_paragraphs);
 
 
@@ -109,7 +104,7 @@ public class TextServise_CREATOR implements OneItem {
 
     }
 
-    public NP_L3_text getText() {
+    public L3_text getText() {
         return bigText;
     }
 

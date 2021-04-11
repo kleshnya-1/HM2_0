@@ -1,30 +1,28 @@
 package com.stringApp.core;
 
-import com.stringApp.elements.NP_L0_word;
-import com.stringApp.elements.NP_L3_text;
-import com.stringApp.elements.NP_l1_sent;
-import com.stringApp.elements.NP_l2_paragraph;
+import com.stringApp.elements.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TextServise_EXERCISEmaker {
 
-    NP_L3_text textInExercise = new NP_L3_text();
+
+    L3_text textInExercise = new L3_text();
 
 
-    public TextServise_EXERCISEmaker(NP_L3_text textInExercise) {
+    public TextServise_EXERCISEmaker(L3_text textInExercise) {
         this.textInExercise = textInExercise;
     }
     public TextServise_EXERCISEmaker() {
 
     }
 
-    public NP_L3_text getTextInExercise() {
+    public L3_text getTextInExercise() {
         return textInExercise;
     }
 
-    public void setTextInExercise(NP_L3_text textInExercise) {
+    public void setTextInExercise(L3_text textInExercise) {
         this.textInExercise = textInExercise;
     }
 
@@ -41,11 +39,19 @@ public class TextServise_EXERCISEmaker {
         {
 
         }
-        List<String> s = textInExercise.getText().stream().map();
 
+        List<L0_word> words = new ArrayList<>();
+        textInExercise.getText().forEach(p->{
+            p.getParagraph().forEach(sen->{
+                sen.getSent().forEach(np_l0_word -> {
+                   words.add(np_l0_word);
+                });
+            });
+        });
 
-
-
+        for (L0_word word:words){
+            System.out.println(word.toString());
+        }
 
 
 
@@ -54,6 +60,6 @@ public class TextServise_EXERCISEmaker {
 
     public void getIngo(){
 
-    }
+    }}
 
-}
+

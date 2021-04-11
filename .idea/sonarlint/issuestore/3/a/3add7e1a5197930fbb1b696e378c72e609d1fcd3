@@ -1,12 +1,12 @@
 
-v
+^
+java:S3973-"HUse indentation to denote the code conditionally executed by this "for".(Îñ–ã
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òšüÀ
+o
 java:S2293
-"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä—Š™8èê¦›‹/
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òšüÀ8èê¦›‹/
-e
-java:S3973-"HUse indentation to denote the code conditionally executed by this "for".(Îñ–ã8ÆœÓ¼‹/
-]	java:S125M"<This block of commented-out lines of code should be removed.(¿Œ”¦üÿÿÿÿ8èê¦›‹/
-Z	java:S106Q"9Replace this use of System.out or System.err by a logger.(¨´ÌŽþÿÿÿÿ8èê¦›‹/
-W	java:S125"<This block of commented-out lines of code should be removed.(š§Îc8èê¦›‹/
-{
-java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(Ì‡¥¨ûÿÿÿÿ8èê¦›‹/
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä—Š™
+t
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(Ì‡¥¨ûÿÿÿÿ
+V	java:S125M"<This block of commented-out lines of code should be removed.(¿Œ”¦üÿÿÿÿ
+S	java:S106Q"9Replace this use of System.out or System.err by a logger.(¨´ÌŽþÿÿÿÿ
+P	java:S125"<This block of commented-out lines of code should be removed.(š§Îc

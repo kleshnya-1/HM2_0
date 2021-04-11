@@ -2,11 +2,11 @@ package com.stringApp.elements;
 
 import java.util.List;
 
-public class NP_L0_word implements OneItem {
+public class L0_word implements OneItem {
 
     private String word;
 
-    public NP_L0_word(String word) {
+    public L0_word(String word) {
         this.word = word;
     }
 
@@ -30,5 +30,10 @@ public class NP_L0_word implements OneItem {
     @Override
     public int position() {
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return word;
     }
 }
