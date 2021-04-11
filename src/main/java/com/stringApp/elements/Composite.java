@@ -97,7 +97,7 @@ public class Composite implements ElementMine {
 
         for (ElementMine e : child) {
 
-           /*if (e.toChar() == 0) {
+           if (e.toChar() == 0) {
                 levelCounter++;
             }
 
@@ -112,7 +112,8 @@ public class Composite implements ElementMine {
 
 
             System.out.print("*" + levelCounter + "*");
-*/
+
+
 
             //  System.out.print("_");
             //levelCounter = 0;
