@@ -24,6 +24,7 @@ public class Composite_filler_withBuffers {
     List<Composite> buffer_textForOneElement = new ArrayList<>();
 
     Composite textFromMethod = new Composite();
+
     int counterSymb = 0;
     int counterWords = 0;
 
@@ -41,6 +42,8 @@ public class Composite_filler_withBuffers {
                 case '.':
                     buffer_symbol.add(new OneElement(charInCase));
                     buffer_CorCreateingWord = new ArrayList<>(buffer_symbol.subList(i - counterSymb, i));
+
+
                     buffer_word.add(new Composite(buffer_CorCreateingWord));
                     counterWords++;
                     counterSymb = 0;
@@ -48,22 +51,19 @@ public class Composite_filler_withBuffers {
 
                     buffer_forCreatingSentence = new ArrayList<>(buffer_word.subList
                             (buffer_word.size() - counterWords, buffer_word.size()));
-                    counterWords = 1;
+                    counterWords = 0;
 
 
                     buffer_sentence.add(new Composite().
                             createFromCompositeList(buffer_forCreatingSentence));
-                {
-                  /*  for (Composite c : buffer_forCreatingSentence)
-                        buffer_sentence.add(c);*/
-
-                }
-                break;
+                                break;
 
                 case ' ':
+                case ',':
 
                     buffer_symbol.add(new OneElement(charInCase));
                     buffer_CorCreateingWord = new ArrayList<>(buffer_symbol.subList(i - counterSymb, i));
+
                     buffer_word.add(new Composite(buffer_CorCreateingWord));
                     counterWords++;
                     counterSymb = 0;
@@ -79,17 +79,29 @@ public class Composite_filler_withBuffers {
 
         }
 //проверить остатки в буaфере
-        {
-           buffer_CorCreateingWord = new ArrayList<>(buffer_symbol.subList(buffer_symbol.size() - counterSymb, buffer_symbol.size()));
-            buffer_word.add(new Composite(buffer_CorCreateingWord));
-            counterWords++;
-            counterSymb = 0;
-            buffer_forCreatingSentence = new ArrayList<>(buffer_word.subList
-                    ( counterWords, buffer_word.size()));
-            counterWords = 0;
-            buffer_sentence.add(new Composite().
-                    createFromCompositeList(buffer_forCreatingSentence));
+                    if( counterSymb != 0)
+            {
+                buffer_CorCreateingWord = new ArrayList<>(buffer_symbol.subList(buffer_symbol.size() - counterSymb, buffer_symbol.size()));
+
+
+
+                    buffer_word.add(new Composite(buffer_CorCreateingWord));
+
+
+                counterWords++;
+                counterSymb = 0;
+                buffer_forCreatingSentence = new ArrayList<>(buffer_word.subList
+                        ( counterWords, buffer_word.size()));
+                counterWords = 0;
+                buffer_sentence.add(new Composite().
+                        createFromCompositeList(buffer_forCreatingSentence));
         }
+
+
+
+//минуя абзацы передаем все в композит текста
+        buffer_text.add(new Composite().createFromCompositeList(buffer_sentence));
+
 
 
 
@@ -109,21 +121,13 @@ public class Composite_filler_withBuffers {
 
     public Composite getComp1() {
 
-        Composite composite = new Composite();
 
-        composite.addFromCompositeList((buffer_word));
-        return composite;
+
+        return buffer_text;
 
     }
 
-  /*  public Composite getComp () {
 
-        Composite composite = new Composite();
-
-        composite.set(new OneElement(buffer_text));
-        return  composite;
-
-    }*/
 
 
     public ArrayList splitCharactersArrayList2(String text) {

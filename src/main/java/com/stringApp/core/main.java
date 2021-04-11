@@ -9,26 +9,8 @@ public class main {
 
 Composite text = new Composite();
 
-/*
-OneElement a = new OneElement('h');
-OneElement a2 = new OneElement('H');
-OneElement a3 = new OneElement('h');
-
-
-
-text.add(a);
-text.add(a2);
-
-*/
-
-//text.showIt();
-
-OneElement oneElement = new OneElement('k');
-
-oneElement.showIt();
-
-
-Composite_filler_withBuffers g = new Composite_filler_withBuffers("first seckond third. again this");
+String stringForExample = "просто строчка для примера. two sentences and nine words.";
+Composite_filler_withBuffers g = new Composite_filler_withBuffers(stringForExample);
 
 g.splitCharactersArrayList2("first seckong three. how");
 g.makeComposite();

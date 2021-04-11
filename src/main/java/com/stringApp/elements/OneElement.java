@@ -25,24 +25,14 @@ public class OneElement implements ElementMine {
     @Override
     public void showIt() {
 
-        //for (OneElement ch : c){
-            //System.out.print(ch);
+        System.out.print(c);
+
         }
 
-      /*  //System.out.print(c.);
+    @Override
+    public char toChar() {
+        return c;
     }
-   // public void showItLikeItMustBe() {
-       // System.out.print(c.toArray());
-    }
 
 
-    public char toChar( ) {
-
-
-        if (c.size()==1){
-            return 'g';
-        }
-        else throw new UnsupportedOperationException("nono");
-
-    }*/
 }

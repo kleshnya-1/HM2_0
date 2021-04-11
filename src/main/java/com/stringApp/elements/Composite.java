@@ -10,7 +10,11 @@ public class Composite implements ElementMine {
     private List<ElementMine> child = new ArrayList<ElementMine>();
 
     public Composite(List<ElementMine> child) {
-        this.child = child;
+
+            this.child = child;
+
+
+
     }
 
   /*  public Composite(List<Composite> child) {
@@ -97,6 +101,12 @@ public class Composite implements ElementMine {
         // for (OneElement oneElement : child) {
         //     oneElement.showIt();
     }
+
+    @Override
+    public char toChar() {
+        return 0;
+    }
+
     public void showItLikeItMustBe() {
         System.out.print(child.toArray());
     }
