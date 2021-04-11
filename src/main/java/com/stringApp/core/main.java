@@ -31,7 +31,7 @@ oneElement.showIt();
 Composite_filler_withBuffers g = new Composite_filler_withBuffers("first seckond third. again this");
 
 g.splitCharactersArrayList2("first seckong three. how");
-g.makeIt();
+g.makeComposite();
 g.tell();
 
       text = g.getComp1();

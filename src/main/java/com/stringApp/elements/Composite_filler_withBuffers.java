@@ -1,140 +1,98 @@
 package com.stringApp.elements;
 
 import com.stringApp.Splitter;
-import com.stringApp.elements.Composite;
 
-import java.awt.*;
-
-import java.awt.image.ColorModel;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Composite_filler_withBuffers {
 
     Splitter splitter = new Splitter();
-    List<Character> buffer_start =new ArrayList<>();
-    List<ElementMine> buffer_symbol=new ArrayList<>() ;
-    List<Composite> buffer_word =new ArrayList<>();
-    List<Composite> buffer_sentence =new ArrayList<>();
-    List<Composite> buffer_paragraph =new ArrayList<>();
+    List<Character> buffer_start = new ArrayList<>();
+    List<ElementMine> buffer_symbol = new ArrayList<>();
+    List<Composite> buffer_word = new ArrayList<>();
+    List<Composite> buffer_sentence = new ArrayList<>();
+    List<Composite> buffer_paragraph = new ArrayList<>();
     Composite buffer_text = new Composite();
 
 
     List<Character> buffer_start_ForOneElement = new ArrayList<>();
-    List<ElementMine> buffer_symbolForOneElement = new ArrayList<>();
-    List<Composite> buffer_wordForOneElement = new ArrayList<>();
-    List<Composite> buffer_sentenceForOneElement = new ArrayList<>();
+    List<ElementMine> buffer_CorCreateingWord = new ArrayList<>();
+    List<Composite> buffer_forCreatingSentence = new ArrayList<>();
+    List<Composite> buffer_sentenceForCratingParagraph = new ArrayList<>();
     List<Composite> buffer_paragraphForOneElement = new ArrayList<>();
     List<Composite> buffer_textForOneElement = new ArrayList<>();
 
-    Composite composite = new Composite();
-    int counter = 0;
+    Composite textFromMethod = new Composite();
+    int counterSymb = 0;
+    int counterWords = 0;
+
     public Composite_filler_withBuffers(String s) {
         this.buffer_start = splitter.splitCharactersArrayList(s);
     }
 
-
-
-  /*  public List<OneElement> getBuffer_text() {
-        return buffer_text;
-    }*/
-
-
-    public void makeIt() {
-
-
+    public void makeComposite() {
 
 
         for (int i = 0; i < buffer_start.size(); i++) {
             char charInCase = buffer_start.get(i);
             switch (charInCase) {
 
-                //case '.':
+                case '.':
+                    buffer_symbol.add(new OneElement(charInCase));
+                    buffer_CorCreateingWord = new ArrayList<>(buffer_symbol.subList(i - counterSymb, i));
+                    buffer_word.add(new Composite(buffer_CorCreateingWord));
+                    counterWords++;
+                    counterSymb = 0;
 
 
-                    /*buffer_symbol.add(new OneElement(charInCase));
+                    buffer_forCreatingSentence = new ArrayList<>(buffer_word.subList
+                            (buffer_word.size() - counterWords, buffer_word.size()));
+                    counterWords = 1;
 
 
-                    buffer_word.add(new OneElement(buffer_symbolForOneElement));
-                    buffer_wordForOneElement.add(new OneElement(buffer_symbolForOneElement));
-                    buffer_symbolForOneElement.clear();
+                    buffer_sentence.add(new Composite().
+                            createFromCompositeList(buffer_forCreatingSentence));
+                {
+                  /*  for (Composite c : buffer_forCreatingSentence)
+                        buffer_sentence.add(c);*/
 
-                    /////
-                    buffer_sentence.add(new OneElement(buffer_wordForOneElement));
-                    buffer_wordForOneElement.clear();*/
-
-                    // buffer_sentence.addFromList(new Composite(buffer_word));
-
-
-                    /*buffer_word.add(new Composite(buffer_symbol));
-                    buffer_symbol.clear();
-                    buffer_sentence.add(new Composite(buffer_word));*/
-
-                   // break;
+                }
+                break;
 
                 case ' ':
-                    //buffer_symbol.add(new OneElement(charInCase));
-                    //buffer_word.add(new Composite(buffer_symbol));
-                   //buffer_wordForOneElement.add(new OneElement(buffer_symbolForOneElement));
 
                     buffer_symbol.add(new OneElement(charInCase));
-                    buffer_word.add(new Composite(buffer_symbol.subList(counter, i)));
-
-
+                    buffer_CorCreateingWord = new ArrayList<>(buffer_symbol.subList(i - counterSymb, i));
+                    buffer_word.add(new Composite(buffer_CorCreateingWord));
+                    counterWords++;
+                    counterSymb = 0;
 
                     break;
 
 
                 default:
                     buffer_symbol.add(new OneElement(charInCase));
-
-                    counter++;
-
-
+                    counterSymb++;
 
             }
 
-
+        }
+//проверить остатки в буaфере
+        {
+           buffer_CorCreateingWord = new ArrayList<>(buffer_symbol.subList(buffer_symbol.size() - counterSymb, buffer_symbol.size()));
+            buffer_word.add(new Composite(buffer_CorCreateingWord));
+            counterWords++;
+            counterSymb = 0;
+            buffer_forCreatingSentence = new ArrayList<>(buffer_word.subList
+                    ( counterWords, buffer_word.size()));
+            counterWords = 0;
+            buffer_sentence.add(new Composite().
+                    createFromCompositeList(buffer_forCreatingSentence));
         }
 
-//проверить остатки в буффере, если нет точки в конце и он не 0
-       {
-           /*buffer_word.add(new Composite(buffer_symbol));
-           buffer_symbol.clear();*/
 
 
-
-
-            /*buffer_word.add(new OneElement(buffer_symbolForOneElement));
-            buffer_wordForOneElement.add(new OneElement(buffer_symbolForOneElement));
-            buffer_symbolForOneElement.clear();
-
-            /////
-            buffer_sentence.add(new OneElement(buffer_wordForOneElement));
-            buffer_sentenceForOneElement.add(new OneElement(buffer_wordForOneElement));
-            buffer_wordForOneElement.clear();
-
-            buffer_paragraph.add(new OneElement(buffer_sentenceForOneElement));
-            buffer_paragraphForOneElement.add(new OneElement(buffer_sentenceForOneElement));
-            buffer_sentenceForOneElement.clear();
-
-            buffer_text.add(new OneElement(buffer_paragraphForOneElement));
-            buffer_textForOneElement.add(new OneElement(buffer_paragraphForOneElement));
-            buffer_paragraphForOneElement.clear();
-
-            buffer_textForOneElement.clear();*/
-
-
-
-
-                    /*buffer_paragraph.add(new OneElement(buffer_sentence));
-                    buffer_paragraph.clear();
-
-                    buffer_text.add(new OneElement(buffer_paragraph));
-                    buffer_text.clear();*/
-
-
-        }
 
         /*composite.add(new OneElement(buffer_text));
         return  composite;*/
@@ -149,12 +107,12 @@ public class Composite_filler_withBuffers {
 
     ;
 
-    public Composite getComp1 () {
+    public Composite getComp1() {
 
         Composite composite = new Composite();
 
         composite.addFromCompositeList((buffer_word));
-        return  composite;
+        return composite;
 
     }
 

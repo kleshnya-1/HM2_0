@@ -3,6 +3,7 @@ package com.stringApp;
 import com.stringApp.elements.L1_Symbol;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Splitter {
 
@@ -31,18 +32,18 @@ public class Splitter {
 
 
 
-    public ArrayList splitCharactersArrayList(String text){
+    public List<Character> splitCharactersArrayList(String text){
 
 
-        ArrayList<Character> characterArrayList = new ArrayList<>();
+        ArrayList<Character> characterList = new ArrayList<>();
 
 
 
         for (int i=0;i<text.length();i++){
-            characterArrayList.add(new Character(text.charAt(i)));
+            characterList.add(new Character(text.charAt(i)));
 
         }
-        return characterArrayList;
+        return characterList;
 
 
 

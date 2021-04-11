@@ -13,6 +13,11 @@ public class Composite implements ElementMine {
         this.child = child;
     }
 
+  /*  public Composite(List<Composite> child) {
+        for ( Composite c:child)
+        this.child.add(c);
+    }*/
+
     public Composite(ElementMine... oneelemsnts) {
         child = new LinkedList<>();
         for (ElementMine c : oneelemsnts) {
@@ -59,6 +64,21 @@ public class Composite implements ElementMine {
 
 
     }
+    public Composite createFromCompositeList(List<Composite> e){
+
+        Composite necComp = new Composite();
+
+        for (Composite el : e)
+
+            necComp.add((el));
+
+        return necComp;
+
+
+
+    }
+
+
 
 
     public void set(OneElement e) {
