@@ -20,24 +20,20 @@ public class main {
 
 
 
-        TextServise_CREATOR textServise = new TextServise_CREATOR();
-        textServise.getStringForSplitting(example);
-        textServise.splitText();
+        TextServise_CREATOR textServise_creator = new TextServise_CREATOR();
+        TextServise_EXERCISEmaker exerciseMaker = new TextServise_EXERCISEmaker();
 
-        L3_text text = new L3_text(textServise.getText());
+        textServise_creator.getStringForSplitting(example);
+        textServise_creator.splitText();
 
-
-        text.print();
-
-
-        TextServise_EXERCISEmaker exercisEmaker = new TextServise_EXERCISEmaker();
-        exercisEmaker.setTextInExercise(text);
-
+        L3_text text = new L3_text(textServise_creator.getText());
+        //text.print();
         System.out.println();
 
-        exercisEmaker.Num5();
 
-
+        exerciseMaker.setTextInExercise(text);
+        //exerciseMaker.Num6();
+        exerciseMaker.Num3();
 
 
         System.out.println();
