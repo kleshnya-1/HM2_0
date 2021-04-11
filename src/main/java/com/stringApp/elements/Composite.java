@@ -12,15 +12,9 @@ public class Composite implements ElementMine {
     public Composite(List<ElementMine> child) {
 
             this.child = child;
-
-
-
     }
 
-  /*  public Composite(List<Composite> child) {
-        for ( Composite c:child)
-        this.child.add(c);
-    }*/
+
 
     public Composite(ElementMine... oneelemsnts) {
         child = new LinkedList<>();
@@ -31,10 +25,6 @@ public class Composite implements ElementMine {
     }
 
 
-    /*public Composite(List<OneElement> childOE) {
-        this.child = childOE;
-    }
-*/
 
 
     public Composite() {
@@ -96,19 +86,74 @@ public class Composite implements ElementMine {
 
     @Override
     public void showIt() {
+        int levelCounter = 0;
+
+//1 - начало слова
+//2 - начало предложения
+//3 - начало текста
 
 
-        // for (OneElement oneElement : child) {
-        //     oneElement.showIt();
+        ElementMine ePrev = new OneElement('0');
+
+        for (ElementMine e : child) {
+
+           /*if (e.toChar() == 0) {
+                levelCounter++;
+            }
+
+            if (levelCounter == 0) {
+                System.out.print("");
+            }
+            if (levelCounter == 1) {
+                System.out.print(". ");
+            }
+
+
+
+
+            System.out.print("*" + levelCounter + "*");
+*/
+
+            //  System.out.print("_");
+            //levelCounter = 0;
+          /*  ePrev.showIt();
+            ePrev = e;
+            ePrev.showIt();*/
+
+           /* if(ePrev.toChar() == ' '){
+                System.out.print(" ");
+            }*/
+
+            e.showIt();
+           /* if (e.toChar()==0){
+                System.out.print(". ");
+            }*/
+          //  levelCounter=0;
+
+
+        }
+
     }
+
+
 
     @Override
     public char toChar() {
-        return 0;
+        char ch = 0;
+        for (ElementMine e: child)
+        {
+           ch= e.toChar();
+        }
+        return ch;
+
     }
 
     public void showItLikeItMustBe() {
         System.out.print(child.toArray());
+    }
+
+    public List<ElementMine> getChild() {
+        return child;
     }
 }
 
