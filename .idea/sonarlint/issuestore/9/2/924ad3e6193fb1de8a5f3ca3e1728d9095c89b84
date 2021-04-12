@@ -1,0 +1,27 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ÿ÷ïøÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òšüÀ
+q
+java:S1450"\Remove the "Buffer_words2" field and declare it as a local variable in the relevant methods.(¹‰Šj
+—
+java:S1186f"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÍÄ¥
+v	java:S116"\Rename this field "Buffer_paragraphs" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÅ·°şÿÿÿÿ
+l	java:S116"WRename this field "Buffer_sents" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Àà™
+q	java:S116"WRename this field "Buffer_words" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í Öıÿÿÿÿ
+l	java:S116"XRename this field "Buffer_words2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹‰Šj
+V	java:S125"<This block of commented-out lines of code should be removed.(èĞäøÿÿÿÿ
+6
+java:S2129"" Remove this "String" constructor(é½–¡
+T
+java:S2121>"9Remove this "substring" call; it has predictable results.(ò˜éùÿÿÿÿ
+Q	java:S125T"<This block of commented-out lines of code should be removed.(İ©³Ÿ
+V	java:S125W"<This block of commented-out lines of code should be removed.(ßíÃùÿÿÿÿ
+S	java:S106c"9Replace this use of System.out or System.err by a logger.(¯É˜ÿşÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(•ñ ùÿÿÿÿ
+C
+java:S1068
+".Remove this unused "paragraphs" private field.(Ùâÿ?
+?
+java:S1068")Remove this unused "sents" private field.(ĞÚáĞ
+D
+java:S1068")Remove this unused "words" private field.(ëâÙÖûÿÿÿÿ

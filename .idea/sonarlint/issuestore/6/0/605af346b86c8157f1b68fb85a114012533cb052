@@ -1,0 +1,29 @@
+
+	java:S116"eRename this field "buffer_forCreatingSentence" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¢ßü8êùÆ‚Œ/
+{	java:S116"ZRename this field "buffer_sentence" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÆ‹ıÿÿÿÿ8ë…ğ¼‹/
+‰	java:S116"hRename this field "buffer_paragraphForOneElement" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼šÃªøÿÿÿÿ8×¨ğëŠ/
+	java:S116"cRename this field "buffer_textForOneElement" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÛøâ8‹ÀğëŠ/
+t	java:S116
+"XRename this field "buffer_symbol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó³æ˜8ë…ğ¼‹/
+X	java:S125k"<This block of commented-out lines of code should be removed.(ãÂÆ¾8Õ½ŸƒŒ/
+~	java:S116"bRename this field "buffer_CorCreateingWord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¡ÓÚ8øÅº‚Œ/
+F
+java:S2129Š"#Remove this "Character" constructor(¢øå®úÿÿÿÿ8Õ½ŸƒŒ/
+r	java:S116"VRename this field "buffer_word" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¦îÅ8ë…ğ¼‹/
+>
+java:S1116v"Remove this empty statement.(Åñ­õşÿÿÿÿ8Õ½ŸƒŒ/
+M
+java:S3740ƒ"/Provide the parametrized type for this generic.(ìÖ¤£8Õ½ŸƒŒ/
+|	java:S116"[Rename this field "buffer_paragraph" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùƒ”„ÿÿÿÿÿ8ë…ğ¼‹/
+w	java:S116"VRename this field "buffer_text" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ÎÖ“ıÿÿÿÿ8ë…ğ¼‹/
+T
+java:S1874Š"1Remove this use of "Character"; it is deprecated.(¢øå®úÿÿÿÿ8Õ½ŸƒŒ/
+	java:S116"mRename this field "buffer_sentenceForCratingParagraph" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍâëÍûÿÿÿÿ8Ü‹¯ƒŒ/
+
+java:S1186p"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯èı–8Õ½ŸƒŒ/
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(àˆÿ²8†›ÊæŠ/
+x	java:S116	"WRename this field "buffer_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹Úıÿÿÿÿ8£ìî¼‹/
+
+java:S1319ƒ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ìÖ¤£8Õ½ŸƒŒ/
+	java:S116"eRename this field "buffer_start_ForOneElement" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ığ™Õ8š¸ïëŠ/
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±˜ß³8è—º”Œ/

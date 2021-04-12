@@ -1,0 +1,18 @@
+
+U	java:S106i"9Replace this use of System.out or System.err by a logger.(×•œ²8öÀËŒ/
+[	java:S106™"9Replace this use of System.out or System.err by a logger.(¨´Ìşÿÿÿÿ8èê¦›‹/
+Z	java:S106l"9Replace this use of System.out or System.err by a logger.(å‡ëÇøÿÿÿÿ8öÀËŒ/
+v
+java:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä—Š™8èê¦›‹/
+X	java:S125v"<This block of commented-out lines of code should be removed.(˜£Ç‘8ö£®‹Œ/
+^	java:S125„"<This block of commented-out lines of code should be removed.(çÊŒıÿÿÿÿ8ÊÇŒŒ/
+e
+java:S3973,"HUse indentation to denote the code conditionally executed by this "for".(Îñ–ã8ÆœÓ¼‹/
+V
+java:S1854`"9Remove this useless assignment to local variable "ePrev".(¦×Âá8›¹‘ŒŒ/
+G
+java:S1481`"*Remove this unused "ePrev" local variable.(¦×Âá8›¹‘ŒŒ/
+^	java:S125"<This block of commented-out lines of code should be removed.(Ÿ×­üÿÿÿÿ8áÌ ŒŒ/
+Z	java:S106r"9Replace this use of System.out or System.err by a logger.(Ğ—Ë«üÿÿÿÿ8öÀËŒ/
+]	java:S125|"<This block of commented-out lines of code should be removed.(Åû¿øÿÿÿÿ8ó‹‘ŒŒ/

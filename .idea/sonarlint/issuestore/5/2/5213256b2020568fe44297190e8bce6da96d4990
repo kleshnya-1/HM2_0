@@ -1,0 +1,26 @@
+
+s	java:S116"WRename this field "Buffer_sents" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Àà™8ëéÚŒ/
+^	java:S125"<This block of commented-out lines of code should be removed.(•ñ ùÿÿÿÿ8±ô¢Œ/
+Z	java:S106e"9Replace this use of System.out or System.err by a logger.(¯É˜ÿşÿÿÿÿ8º²É‘Œ/
+F
+java:S1068")Remove this unused "sents" private field.(ĞÚáĞ8‘àŒ/
+}	java:S116"\Rename this field "Buffer_paragraphs" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÅ·°şÿÿÿÿ8ëéÚŒ/
+]	java:S125"<This block of commented-out lines of code should be removed.(èĞäøÿÿÿÿ8¦ÎòŒ/
+x	java:S116"WRename this field "Buffer_words" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í Öıÿÿÿÿ8ëéÚŒ/
+x
+java:S1450"\Remove the "Buffer_words2" field and declare it as a local variable in the relevant methods.(¹‰Šj8“ê¤‘Œ/
+[
+java:S2121@"9Remove this "substring" call; it has predictable results.(ò˜éùÿÿÿÿ8”´À‘Œ/
+]	java:S125Y"<This block of commented-out lines of code should be removed.(ßíÃùÿÿÿÿ8ëéÚŒ/
+s	java:S116"XRename this field "Buffer_words2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹‰Šj8Ñ’¤‘Œ/
+J
+java:S1068".Remove this unused "paragraphs" private field.(Ùâÿ?8‘àŒ/
+K
+java:S1068")Remove this unused "words" private field.(ëâÙÖûÿÿÿÿ8‘àŒ/
+X	java:S125V"<This block of commented-out lines of code should be removed.(İ©³Ÿ8ÚÑ‹’Œ/
+
+java:S1186h"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÍÄ¥8şŒ/
+n	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ÿ÷ïøÿÿÿÿ8ğìÄ’Œ/
+=
+java:S2129$" Remove this "String" constructor(é½–¡8è•äŒ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ëã©Ó

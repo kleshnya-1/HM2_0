@@ -1,0 +1,6 @@
+
+S
+java:S1874"1Remove this use of "Character"; it is deprecated.(º¦¿ûÿÿÿÿ8¦éÁÅŠ/
+E
+java:S2129"#Remove this "Character" constructor(º¦¿ûÿÿÿÿ8¦éÁÅŠ/
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±˜ß³8¢—º”Œ/

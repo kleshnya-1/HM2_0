@@ -3,8 +3,14 @@ package com.stringApp.core;
 
 import com.stringApp.elements.*;
 
+import com.stringApp.services.editor.TextServise_CREATOR;
+import com.stringApp.services.editor.TextServise_EXERCISEmaker;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class main {
     public static void main(String[] args) {
+        log.info("main starded");
 
 
         String example = "Java считается одним из самых значительных и широко " +
@@ -19,7 +25,6 @@ public class main {
         String example2 = "просто строчка для примера. two sentences and nine words.";
 
 
-
         TextServise_CREATOR textServise_creator = new TextServise_CREATOR();
         TextServise_EXERCISEmaker exerciseMaker = new TextServise_EXERCISEmaker();
 
@@ -27,7 +32,7 @@ public class main {
         textServise_creator.splitText();
 
         L3_text text = new L3_text(textServise_creator.getText());
-        //text.print();
+        text.print();
         System.out.println();
 
 
@@ -37,50 +42,12 @@ public class main {
 
 
         System.out.println();
+        text.printOriginal();
 
 
+        // BigText bigText = new BigText(example);
 
 
-
-
-
-
-       // BigText bigText = new BigText(example);
-
-
-
-
-
-
-/*
-Composite text = new Composite();
-
-
-        String stringForExample = "просто строчка для примера. two sentences and nine words.";
-        Composite_filler_withBuffers g = new Composite_filler_withBuffers(stringForExample);
-
-
-        g.makeComposite();
-
-
-        text = g.getComp1();
-
-
-
-
-
-        Printer printer = new Printer(text);
-        printer.printWord();
-
-      //  printer.printHowItMustBe(text);
-
-
-
-
-
-
-
-*/
-
+        log.info("main finished");
     }
 }

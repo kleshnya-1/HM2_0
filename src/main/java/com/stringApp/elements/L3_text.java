@@ -4,7 +4,8 @@ import java.util.List;
 
 public class L3_text implements  OneItem{
 
-    List<L2_paragraph> text;
+    private  List<L2_paragraph> text;
+    private  String originalText;
 
 
     public L3_text(List text) {
@@ -13,6 +14,7 @@ public class L3_text implements  OneItem{
 
     public L3_text(L3_text text) {
         this.text = text.getText();
+        this.originalText=text.getOriginal();
     }
     public L3_text( ) {
 
@@ -46,4 +48,15 @@ public class L3_text implements  OneItem{
 
 
     }
+
+    public void setOriginal(String original) {
+        this.originalText = original;
+    }
+
+    public String getOriginal() {
+        return originalText;
+    }public void printOriginal() {
+        System.out.println(originalText) ;
+    }
+
 }

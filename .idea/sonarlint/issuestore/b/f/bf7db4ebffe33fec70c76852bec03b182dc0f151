@@ -1,0 +1,9 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÓÌƒıÿÿÿÿ
+]	java:S125 "<This block of commented-out lines of code should be removed.(é—˜îÿÿÿÿÿ8€ÇéŠŒ/
+X	java:S125>"<This block of commented-out lines of code should be removed.(ÇöÂ8úÚİŠŒ/
+N
+java:S1481""1Remove this unused "levelCounter" local variable.(ñéõ„8€ÇéŠŒ/
+]	java:S125E"<This block of commented-out lines of code should be removed.(ºš°¬ùÿÿÿÿ8úÚİŠŒ/
+]	java:S125I"<This block of commented-out lines of code should be removed.(êçğşøÿÿÿÿ8úÚİŠŒ/
+W	java:S125S"<This block of commented-out lines of code should be removed.(Ë‰¶w8úÚİŠŒ/

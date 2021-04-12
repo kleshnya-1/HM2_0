@@ -1,6 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÓÌƒıÿÿÿÿ
-V	java:S125"<This block of commented-out lines of code should be removed.(½ûé¬ıÿÿÿÿ
-E
-java:S1128	"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ
-Q	java:S125"<This block of commented-out lines of code should be removed.(üÈ£ˆ

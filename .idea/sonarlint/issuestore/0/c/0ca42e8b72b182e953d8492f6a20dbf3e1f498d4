@@ -1,0 +1,8 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òšüÀ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‰¢Œóûÿÿÿÿ
+E
+java:S3740""/Provide the parametrized type for this generic.(Ü”€Š
+J
+java:S3740
+"/Provide the parametrized type for this generic.(¬…âäüÿÿÿÿ
